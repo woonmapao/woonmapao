@@ -12,9 +12,7 @@
 <!-- markdownlint-enable MD033 -->
 
 ```go
-// main.go
-
-package introduction
+package main
 
 import (
 	"fmt"
@@ -23,7 +21,7 @@ import (
 
 const (
 	birthYear   = 2001
-	currentYear = 2024
+	currentYear = 2023
 )
 
 var age = currentYear - birthYear
@@ -52,7 +50,7 @@ func learnGo() {
 	topics := []string{"⚙️ Goroutines, channels, idiomatic Go code", "💡 Efficient use of CPU cores", "🌐 Building scalable and concurrent systems"}
 
 	for _, topic := range topics {
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 		fmt.Println(topic)
 	}
 
